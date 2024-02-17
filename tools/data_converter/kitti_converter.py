@@ -8,6 +8,7 @@ from mmdet3d.core.bbox import box_np_ops
 from .kitti_data_utils import get_kitti_image_info, get_waymo_image_info
 from .nuscenes_converter import post_process_coords
 
+
 kitti_categories = ('Pedestrian', 'Cyclist', 'Car')
 
 

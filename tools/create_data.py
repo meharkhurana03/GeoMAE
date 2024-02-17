@@ -8,6 +8,8 @@ from data_converter import nuscenes_converter as nuscenes_converter
 from tools.data_converter import nuscenes_ssl_converter as nuscenes_ssl_converter
 from data_converter.create_gt_database import create_groundtruth_database
 
+from mmdet3d import __version__ as mmdet3d_version
+print(mmdet3d_version)
 
 def kitti_data_prep(root_path, info_prefix, version, out_dir):
     """Prepare data related to Kitti dataset.
