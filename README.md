@@ -14,6 +14,26 @@ mmdetection3d=0.15.0
 spconv-cu113=2.1.21
 ```
 
+### Steps
+```
+conda install pytorch==1.10.1 torchvision==0.11.2 torchaudio==0.10.1 cudatoolkit=11.3 -c pytorch -c conda-forge
+pip install mmcv-full==1.4.8 -f https://download.openmmlab.com/mmcv/dist/cu113/torch1.10.0/index.html
+pip install mmdet==2.20.0
+pip install mmsegmentation==0.23.0
+pip install spconv-cu113==2.1.21
+
+pip install scikit-image
+pip install nuscenes-devkit lyft_dataset_sdk plyfile
+pip install networkx==2.2
+pip install scikit-image==0.18.0
+pip install numba==0.48.0
+pip install nuscenes-devkit==1.1.10
+pip install pandas==1.4.0
+pip install numpy==1.19.5
+pip install ipdb
+pip install torch-scatter==2.0.9
+```
+
 **ATTENTION: It is highly recommended to use the same version of these packages to avoid code mismatch.**
 
 For mmcv, you can follow the official [installation.md](https://github.com/open-mmlab/mmcv/blob/main/docs/en/get_started/installation.md) to install the expected version.
@@ -22,6 +42,9 @@ For mmdetection and mmdetection3d, you can follow the official [installation.md]
 
 Finally, run
 ```
+export CXX=g++
+export CUDA_HOME=path/to/cuda
+
 python setup.py develop
 ```
 
